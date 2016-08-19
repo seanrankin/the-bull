@@ -3,20 +3,18 @@
   <div class="row">
     <div class="one columns"></div>
     <div class="five columns" style="text-align: center;">
-      <p>Reps</p>
-      <%= text_field_tag "reps", nil, :value => "0", :size => "3" %>
+      <span>Reps:</span><br />
+      <%= text_field_tag "reps", nil, :value => "0", :class => "u-full-width" %>
     </div>
     <div class="five columns" style="text-align: center;">
-      <p>Weight</p>
-      <%= text_field_tag "weight", nil, :value => "0", :size => "3" %>
+      <span>Weight:</span><br />
+      <%= text_field_tag "weight", nil, :value => "0", :class => "u-full-width" %>
     </div>
     <div class="one columns"></div>
   </div>
   <div class="row">
-    <div class="one columns"></div>
-    <div class="ten columns" style="text-align: center;">
-      <h1 id="results"></h1>
+    <div class="twelve columns" style="text-align: center; color: #2BAFD9; font-size: 7.5em">
+      <span id="results">0</span>
     </div>
-    <div class="one columns"></div>
   </div>
 </div>
