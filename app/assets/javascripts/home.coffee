@@ -12,4 +12,5 @@ $ ->
   # The score
   CalculateScore = ->
     score = $("#weight").val()*($("#reps").val()-3.4)+$("#reps").val()*30 + 0.01*$("#weight").val()*$("#weight").val()
+    score = Math.round(score)
     $("#results").text(score)
