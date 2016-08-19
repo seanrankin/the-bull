@@ -1,15 +1,15 @@
 <div class="container">
-  <h3 style="text-align: center;">F3 Cola Bull Scoring App</h3>
+  <%= render partial: "partials/header" %>
   <div class="row">
     <div class="twelve columns">
       <span>Reps:</span><br />
-      <%= text_field_tag "reps", nil, :value => "0", :class => "u-full-width" %>
+      <%= text_field_tag "reps", nil, :value => "0", :class => "u-full-width", :type => "number" %>
     </div>
   </div>
   <div class="row">
     <div class="twelve columns">
       <span>Weight:</span><br />
-      <%= text_field_tag "weight", nil, :value => "0", :class => "u-full-width" %>
+      <%= text_field_tag "weight", nil, :value => "0", :class => "u-full-width", :type => "number" %>
     </div>
   </div>
   <div class="row">
@@ -18,3 +18,5 @@
     </div>
   </div>
 </div>
+
+<%= render partial: "partials/links" %>
