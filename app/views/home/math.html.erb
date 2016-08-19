@@ -2,6 +2,7 @@
   <h3>The Math</h3>
   <div class="row">
     <div class="twelve columns">
+      <p><i>Score = Weight * (Reps - 3.8) + Reps * 30 + 0.01 * Weight * Weight</i></p>
       <p>To develop a fair and equitable scoring formula for the Bull that leveled the playing field for runners and ruckers, Cornstache looked at 2 and 1/2 years of Bull scoring data.</p>
       <p>He found there was a relationship between points and weight (see figure below). The same person working just as hard with more weight will score more.</p>
       <p>He estimated the extra points weight gives you just because it's more weight: Not because you worked harder, just because you had more weight. For example, with the old scoring if you carried 20 lbs you got 50 extra points because of that weight (not because you worked harder).</p>
@@ -9,10 +10,11 @@
     </div>
   </div>
   <div class="row">
-    <div class="twelve columns">
+    <div class="twelve columns" style="text-align: center;">
       <%= image_tag("math.png", class: "u-max-full-width") %>
     </div>
   </div>
 </div>
 
 <%= render partial: "partials/links" %>
+<%= render partial: "partials/footer" %>
