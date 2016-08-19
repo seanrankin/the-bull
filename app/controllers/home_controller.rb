@@ -5,4 +5,6 @@ class HomeController < ApplicationController
   end
   def math
   end
+  def test
+  end
 end
