@@ -1,6 +1,22 @@
-<h1>F3 Cola Bull Scoring App</h1>
-Reps: <%= text_field_tag "reps", nil, :value => "0" %>
-<br />
-Weight: <%= text_field_tag "weight", nil, :value => "0" %>
-<br />
-<h1 id="results" />
+<div class="container">
+  <h3 style="text-align: center;">F3 Cola Bull Scoring App</h3>
+  <div class="row">
+    <div class="one columns"></div>
+    <div class="five columns" style="text-align: center;">
+      <p>Reps</p>
+      <%= text_field_tag "reps", nil, :value => "0", :size => "3" %>
+    </div>
+    <div class="five columns" style="text-align: center;">
+      <p>Weight</p>
+      <%= text_field_tag "weight", nil, :value => "0", :size => "3" %>
+    </div>
+    <div class="one columns"></div>
+  </div>
+  <div class="row">
+    <div class="one columns"></div>
+    <div class="ten columns" style="text-align: center;">
+      <h1 id="results"></h1>
+    </div>
+    <div class="one columns"></div>
+  </div>
+</div>
