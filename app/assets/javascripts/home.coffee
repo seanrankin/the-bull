@@ -1,15 +1,10 @@
 $ ->
   # Focus on click
-  $("#reps").on "click", ->
-    $(this).select()
-  $("#weight").on "click", ->
+  $(":input").on "click", ->
     $(this).select()
   # Change results on change
-  $("#reps").on "keyup", ->
+  $(":input").bind "keyup change", (e) ->
     CalculateScore()
-  $("#weight").on "keyup", ->
-    CalculateScore()
-  # The score
   CalculateScore = ->
     score = $("#weight").val()*($("#reps").val()-3.4)+$("#reps").val()*30 + 0.01*$("#weight").val()*$("#weight").val()
     score = Math.round(score)
